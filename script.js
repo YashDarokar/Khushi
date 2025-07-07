@@ -25,6 +25,10 @@ yesBtn.addEventListener('click', () => {
   form.submit();
 });
 
+document.getElementById('yes').addEventListener('click', function() {
+  document.getElementById('response-message').textContent = "Yay! Can't wait for our date! 💖";
+});
+
 // Try to unmute after user interacts (for browsers that block autoplay with sound)
 document.body.addEventListener('click', function unmuteMusic() {
   const audio = document.getElementById('bg-music');
