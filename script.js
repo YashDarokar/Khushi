@@ -29,6 +29,10 @@ document.getElementById('yes').addEventListener('click', function() {
   document.getElementById('response-message').textContent = "Yay! Can't wait for our date! 💖";
 });
 
+form.addEventListener('submit', function(e) {
+  document.getElementById('response-message').textContent = "Thank you! Your response has been submitted. 💌";
+});
+
 // Try to unmute after user interacts (for browsers that block autoplay with sound)
 document.body.addEventListener('click', function unmuteMusic() {
   const audio = document.getElementById('bg-music');
